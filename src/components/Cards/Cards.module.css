@@ -5,6 +5,8 @@
   justify-content: start;
   padding: 1.8rem 3.75rem;
   background-color: #000000e6;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .tag {
