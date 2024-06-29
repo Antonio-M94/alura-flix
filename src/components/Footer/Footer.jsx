@@ -1,4 +1,4 @@
-import styles from './Footer.module.css';
+import styles from './footer.module.css';
 import logoAlura from '../../assets/logo-alura.png';
 
 const Footer = () => {
