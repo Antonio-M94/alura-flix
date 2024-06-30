@@ -1,0 +1,112 @@
+.container {
+  width: 90%;
+  max-width: 40rem;
+  background-color: #03122f;
+  border: 2px solid #6bd1ff;
+  position: fixed;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cancelButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.cancelButton button {
+  background-color: #03122f;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cancelButton button:hover {
+  transform: scale(0.8);
+}
+
+.formContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.title {
+  color: #2271d1;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.input,
+.textarea {
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #2271d1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #03122f;
+  color: #ffffff;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #a5a5a5;
+}
+
+.textarea {
+  height: 100px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button {
+  background-color: #03122f;
+  border: 1px solid #2271d1;
+  color: #ffffff;
+  padding: 10px;
+  flex: 1;
+  margin: 0 5px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease;
+  max-width: 12rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  box-shadow: inset 0 0 5px #2271d1;
+  color: #2271d1;
+}

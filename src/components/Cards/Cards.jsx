@@ -1,6 +1,7 @@
 import styles from './cards.module.css';
 import deleteIcon from '../../assets/delete.png';
 import editIcon from '../../assets/edit.png';
+import Modal from '../Modal/Modal';
 const Cards = () => {
   return (
     <div className={styles.container}>
@@ -116,6 +117,7 @@ const Cards = () => {
           </div>
         </div>
       </div>
+      <Modal />
     </div>
   );
 };
