@@ -26,10 +26,10 @@ const Modal = () => {
             Categoría
           </label>
           <select id="category" className={styles.input}>
+            <option value="">seleccione una categoría</option>
             <option value="Front End">Front End</option>
             <option value="Back End">Back End</option>
-            <option value="Innovacion">Innovación</option>
-            <option value="Gestion">Gestión</option>
+            <option value="Innovacion_gestion">Innovación y Gestión</option>
           </select>
 
           <label className={styles.label} htmlFor="image">
