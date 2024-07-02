@@ -1,5 +1,6 @@
 import Banner from '../../components/Banner/Banner';
 import Cards from '../../components/Cards/Cards';
+import HeaderMobile from '../../components/HeaderMobile/HeaderMobile';
 import styles from './home.module.css';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div className={styles.container}>
       <Banner />
       <Cards />
+      <HeaderMobile />
     </div>
   );
 };

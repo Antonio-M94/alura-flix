@@ -1,9 +1,9 @@
-.container {
+.header {
   background-color: #262626;
   width: 100%;
   box-sizing: border-box;
   padding: 1.4rem 2.75rem;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   border-top: 4px solid #2271d1;
@@ -12,25 +12,23 @@
   position: relative;
   bottom: 0;
   left: 0;
-  display: none;
+}
+
+.homeLink,
+.addLink {
+  text-decoration: none;
 }
 
 .homeButton {
-  padding: 2px 10px;
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
   gap: 1rem;
   align-items: center;
   color: #2271d1;
-  background-color: #2271d13d;
+  background-color: transparent;
   border: 1px solid #2271d1;
   border-radius: 30px;
-  min-width: 167px;
-  text-align: center;
-  font-weight: 900;
-  box-shadow: 0px 4px 8px #00000080;
-  font-size: 1rem;
-  text-transform: uppercase;
 }
 
 .homeButton:hover {
@@ -40,19 +38,31 @@
   box-shadow: inset 0px 4px 16px #2271d1b3;
 }
 
+.homeIcon,
+.addIcon {
+  height: 28px;
+  width: 28px;
+}
+
+.homeText {
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .addButton {
-  background-color: #262626;
+  background-color: transparent;
   border: none;
 }
 
-.addButton img {
-  padding: 2px 10px;
-  height: 58px;
-  width: 58px;
+.addIcon {
+  height: 40px;
+  width: 40px;
 }
 
 @media (max-width: 680px) {
-  .container {
+  .header {
     display: flex;
   }
 }
