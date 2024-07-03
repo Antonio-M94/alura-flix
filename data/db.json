@@ -1,15 +1,6 @@
 {
   "videos": [
     {
-      "id": "6",
-      "title": "Cuándo usar let, var y const?",
-      "category": "Innovación y Gestión",
-      "image": "https://i.ytimg.com/vi/PztCEdIJITY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDJWqQzWreQLTp7q4esMjlV1roLTA",
-      "video": "https://www.youtube.com/embed/PztCEdIJITY?si=7nJSLfAE6NFR7wVo",
-      "description": "Descripción del video",
-      "color": "#ffba05"
-    },
-    {
       "id": "46c2",
       "title": "¿Qué es JavaScript?",
       "category": "Front End",
@@ -89,6 +80,15 @@
       "video": "https://www.youtube.com/watch?v=6N3OkLCfK-0&ab_channel=AluraLatam",
       "color": "#ffba05",
       "description": "En este video nuestra invitada, Andyara, nos explicará que són las muy conocidas hoy en día metodologias ágiles y nos comentará un poco sobre como aplicarlas y cuáles son los beneficios de utilizarlas en su equipo o empresa."
+    },
+    {
+      "id": "32ee",
+      "title": "7 Soft Skills más deseadas por las empresas",
+      "category": "Innovación y Gestión",
+      "image": "https://i.ytimg.com/vi/YhR7Zp8NUzE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLApSY-UYiv7541vDw1U-p_iqiq-VA",
+      "video": "https://www.youtube.com/watch?v=YhR7Zp8NUzE&t=109s&ab_channel=AluraLatam",
+      "color": "#ffba05",
+      "description": "Seguro que ya escuchaste hablar sobre las Soft Skills, pero ¿sabes cuáles son las 7 más buscadas por las empresas? Quédate en este video con nosotros que vamos a explicarte la importancia de estas habilidades y porque son tan requeridas en el mercado laboral."
     }
   ]
 }

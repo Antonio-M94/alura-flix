@@ -2,7 +2,7 @@
   min-width: 24rem;
   height: 18rem;
   border-radius: 1.5rem;
-  border: 0.125rem solid; /* El color se establece dinámicamente */
+  border: 0.125rem solid;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -12,7 +12,7 @@
 
 .card-item__image {
   width: 100%;
-  height: calc(100% - 3.75rem); /* Tamaño original */
+  height: calc(100% - 3.75rem);
   object-fit: cover;
   border-radius: 1.5rem 1.5rem 0 0;
   cursor: pointer;
@@ -28,8 +28,8 @@
   padding: 0.5rem 0;
   box-sizing: border-box;
   align-items: center;
-  height: 3.75rem; /* Tamaño original */
-  border-top: 0.125rem solid; /* Aseguramos que el borde superior esté presente */
+  height: 3.75rem;
+  border-top: 0.125rem solid;
 }
 
 .card-item__buttons[data-category='front-end'] {
@@ -37,7 +37,7 @@
   box-shadow:
     0 -0.1rem 0.4rem #6bd1ff80,
     inset 0 0.1rem 0.4rem #6bd1ff80,
-    inset 0 0.1rem 0.4rem #6bd1ff80; /* Sombra interna */
+    inset 0 0.1rem 0.4rem #6bd1ff80;
 }
 
 .card-item__buttons[data-category='back-end'] {
@@ -45,7 +45,7 @@
   box-shadow:
     0 -0.1rem 0.1rem #00c86d80,
     inset 0 0.1rem 0.4rem #00c86d80,
-    inset 0 0.1rem 0.4rem #00c86d80; /* Sombra interna */
+    inset 0 0.1rem 0.4rem #00c86d80;
 }
 
 .card-item__buttons[data-category='innovacion-y-gestion'] {
@@ -53,19 +53,19 @@
   box-shadow:
     0 -0.1rem 0.2rem #ffba0580,
     inset 0 0.1rem 0.4rem #ffba0580,
-    inset 0 0.1rem 0.4rem #ffba0580; /* Sombra interna */
+    inset 0 0.1rem 0.4rem #ffba0580;
 }
 
 .card-item--front-end {
-  box-shadow: inset 0 0.1rem 0.4rem rgba(107, 209, 255, 0.5); /* Color para Front End */
+  box-shadow: inset 0 0.1rem 0.4rem rgba(107, 209, 255, 0.5);
 }
 
 .card-item--back-end {
-  box-shadow: inset 0 0.1rem 0.4rem rgba(0, 200, 109, 0.5); /* Color para Back End */
+  box-shadow: inset 0 0.1rem 0.4rem rgba(0, 200, 109, 0.5);
 }
 
 .card-item--innovacion-y-gestion {
-  box-shadow: inset 0 0.1rem 0.4rem rgba(255, 186, 5, 0.5); /* Color para Innovación y Gestión */
+  box-shadow: inset 0 0.1rem 0.4rem rgba(255, 186, 5, 0.5);
 }
 
 .button {
@@ -92,11 +92,10 @@
 }
 
 .button img {
-  width: 1rem; /* Ajusta el tamaño del icono según sea necesario */
-  height: 1rem; /* Ajusta el tamaño del icono según sea necesario */
+  width: 1rem;
+  height: 1rem;
 }
 
-/* Media queries para hacer responsive el card-item */
 @media (max-width: 1200px) {
   .card-item {
     min-width: 20rem;

@@ -14,7 +14,7 @@ const HeaderNuevoVideo = () => {
       <Link to="/nuevo-video" className={styles.addLink}>
         <button className={styles.addButton}>
           <img src={addIcon} alt="Add" className={styles.addIcon} />
-          <span className={styles.addText}>NUEVO VIDEO</span>
+          <span className={styles.addText}>Nuevo Video</span>
         </button>
       </Link>
     </header>

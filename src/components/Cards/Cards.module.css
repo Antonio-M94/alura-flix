@@ -126,7 +126,6 @@
   border: none;
 }
 
-/* Media Queries */
 @media (max-width: 1200px) {
   .cards-container {
     padding: 1.5rem 3rem;

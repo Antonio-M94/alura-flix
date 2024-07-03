@@ -62,7 +62,7 @@ export const deleteVideo = async (id) => {
     if (!response.ok) {
       throw new Error('La respuesta de la red no fue satisfactoria');
     }
-    console.log('Video eliminado exitosamente'); // Agregamos un mensaje de éxito
+    console.log('Video eliminado exitosamente');
   } catch (error) {
     console.error('Error al eliminar el video:', error);
     throw error;

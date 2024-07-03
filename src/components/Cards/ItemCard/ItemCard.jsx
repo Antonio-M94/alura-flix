@@ -19,7 +19,6 @@ const ItemCard = ({
     window.open(video, '_blank');
   };
 
-  // Normalizar la categoría para manejar mayúsculas, minúsculas y tildes
   const normalizeCategory = (category) => {
     return category
       .normalize('NFD')
@@ -29,17 +28,17 @@ const ItemCard = ({
   };
 
   const categoryClass = normalizeCategory(category);
-  const deleteVideoHook = useDeleteVideo(); // Cambio de nombre aquí
+  const deleteVideoHook = useDeleteVideo();
   const { openModal } = useContext(DataContext);
 
   const [deleted, setDeleted] = useState(false);
 
   const handleDelete = async () => {
     try {
-      console.log(`Attempting to delete video with ID: ${id}`); // Log para depuración
-      await deleteVideoHook(id); // Uso del hook correctamente
+      console.log(`Attempting to delete video with ID: ${id}`);
+      await deleteVideoHook(id);
       setDeleted(true);
-      console.log('Video eliminado exitosamente'); // Log de éxito
+      console.log('Video eliminado exitosamente');
     } catch (error) {
       console.error('Error deleting video:', error);
     }

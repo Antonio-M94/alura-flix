@@ -45,7 +45,7 @@ const NuevoVideo = () => {
         description: '',
       });
       setTouchedFields({});
-      setIsFormValid(false); // Resetear estado de validación
+      setIsFormValid(false);
     }
   };
 
@@ -87,9 +87,9 @@ const NuevoVideo = () => {
     <>
       <div className={styles['nuevo-video']}>
         <header className={styles['nuevo-video__header']}>
-          <h1 className={styles['nuevo-video__title']}>NUEVO VIDEO</h1>
+          <h1 className={styles['nuevo-video__title']}>Nuevo Video</h1>
           <p className={styles['nuevo-video__subtitle']}>
-            COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA TARJETA DE VIDEO
+            Complete el formulario para crear una nueva tarjeta de video
           </p>
         </header>
         <main>
@@ -105,7 +105,7 @@ const NuevoVideo = () => {
                 description: '',
               });
               setTouchedFields({});
-              setIsFormValid(false); // Resetear estado de validación
+              setIsFormValid(false);
             }}
           >
             <fieldset className={styles['nuevo-video__fieldset']}>
@@ -243,13 +243,13 @@ const NuevoVideo = () => {
                   }`}
                   disabled={!isFormValid}
                 >
-                  GUARDAR
+                  Guardar
                 </button>
                 <button
                   type="reset"
                   className={styles['nuevo-video__clear-button']}
                 >
-                  LIMPIAR
+                  Limpiar
                 </button>
               </div>
             </fieldset>

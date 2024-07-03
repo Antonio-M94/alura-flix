@@ -1,4 +1,3 @@
-/* Overlay */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -12,7 +11,6 @@
   z-index: 999;
 }
 
-/* Modal container */
 .modal {
   background-color: #03122f;
   width: 90%;
@@ -24,7 +22,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  border: 2px solid #6bd1ff; /* Borde agregado */
+  border: 2px solid #6bd1ff;
 }
 
 .modal__main {
@@ -33,7 +31,6 @@
   align-items: center;
 }
 
-/* Close button */
 .modal__header button {
   position: absolute;
   top: 16px;
@@ -45,7 +42,6 @@
   transform: scale(0.6);
 }
 
-/* Title */
 .modal__title {
   color: #2271d1;
   text-transform: uppercase;
@@ -57,16 +53,14 @@
   margin-bottom: 20px;
 }
 
-/* Form */
 .modal__form {
   width: 80%;
 }
 
-/* Input fields */
 .modal__input,
 .modal__textarea {
   font-family: 'Source Sans Pro', sans-serif;
-  width: 100%; /* Ancho completo */
+  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 2px solid #2271d1;
@@ -87,15 +81,13 @@
   height: 100px;
 }
 
-/* Labels */
 .modal__label {
   font-family: 'Source Sans Pro', sans-serif;
-  color: #ffffff; /* Color blanco */
+  color: #ffffff;
   line-height: 2;
-  width: 100%; /* Ancho completo */
+  width: 100%;
 }
 
-/* Button container */
 .modal__button-container {
   width: 100%;
   display: flex;
@@ -103,7 +95,6 @@
   margin-top: 10px;
 }
 
-/* Buttons */
 .modal__button {
   font-family: 'Roboto', sans-serif;
   width: 45%;
@@ -131,5 +122,5 @@
 
 .modal__input.error,
 .modal__textarea.error {
-  border-color: #e53935; /* Color del borde en caso de error */
+  border-color: #e53935;
 }

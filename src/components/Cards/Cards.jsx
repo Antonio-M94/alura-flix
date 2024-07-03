@@ -10,7 +10,7 @@ const Cards = () => {
 
   useEffect(() => {
     fetchData();
-  }, [fetchData]); // Asegúrate de que fetchData esté memoizado o no cambie en cada renderizado
+  }, [fetchData]);
 
   return (
     <div className={styles['cards-container']}>

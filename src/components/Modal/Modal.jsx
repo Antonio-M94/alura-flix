@@ -6,7 +6,6 @@ import cancelButton from '../../assets/cancel.png';
 import useUpdateVideo from '../../hooks/useUpdateVideo';
 import DataContext from '../../context/DataContext';
 
-// Define los colores por categoría
 const categoryColors = {
   'Front End': '#6bd1ff',
   'Back End': '#00c86d',
@@ -15,14 +14,13 @@ const categoryColors = {
 
 const Modal = ({ video }) => {
   const { closeModal } = useContext(DataContext);
-  const updateVideo = useUpdateVideo(); // Obtén la función de actualización desde el hook
+  const updateVideo = useUpdateVideo();
   const [currentVideo, setCurrentVideo] = useState(video);
   const [isValid, setIsValid] = useState(true);
 
-  // Actualizar el video actual cuando cambia el prop
   useEffect(() => {
     setCurrentVideo(video);
-    checkFormValidity(video); // Valida el formulario cuando el video cambie
+    checkFormValidity(video);
   }, [video]);
 
   const handleInputChange = (e) => {
@@ -53,11 +51,11 @@ const Modal = ({ video }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const updatedVideo = {
-      ...currentVideo, // Usa el video actualizado desde el estado local
-      color: categoryColors[currentVideo.category], // Actualiza el color basado en la categoría seleccionada
+      ...currentVideo,
+      color: categoryColors[currentVideo.category],
     };
-    updateVideo(updatedVideo); // Llama a la función de actualización con los datos actualizados
-    closeModal(); // Cierra el modal después de guardar
+    updateVideo(updatedVideo);
+    closeModal();
   };
 
   const handleReset = () => {

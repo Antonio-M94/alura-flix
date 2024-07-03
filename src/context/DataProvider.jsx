@@ -42,7 +42,6 @@ const DataProvider = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentVideo, setCurrentVideo] = useState(null);
 
-  // Función para obtener los videos
   const fetchData = useCallback(async (signal) => {
     dispatch({ type: 'FETCH_VIDEOS_REQUEST' });
     try {
@@ -53,7 +52,6 @@ const DataProvider = ({ children }) => {
     }
   }, []);
 
-  // Función para crear un nuevo video
   const createData = async (video) => {
     try {
       const newVideo = await createVideo(video);
@@ -63,7 +61,6 @@ const DataProvider = ({ children }) => {
     }
   };
 
-  // Función para actualizar un video existente
   const updateData = async (video) => {
     try {
       const updatedVideo = await updateVideo(video);
@@ -73,41 +70,35 @@ const DataProvider = ({ children }) => {
     }
   };
 
-  // Función para eliminar un video
   const deleteData = async (id) => {
     try {
       await deleteVideo(id);
-      setDeletedId(id); // Marcamos el ID del video eliminado para actualizar el estado local
+      setDeletedId(id);
     } catch (error) {
       console.error('Error deleting video:', error);
     }
   };
 
-  // Función para abrir el modal de edición
   const openModal = (video) => {
     setCurrentVideo(video);
     setIsModalOpen(true);
   };
 
-  // Función para cerrar el modal de edición
   const closeModal = () => {
     setCurrentVideo(null);
     setIsModalOpen(false);
   };
 
-  // Efecto para actualizar automáticamente la lista de videos cuando se elimina uno
   useEffect(() => {
     if (deletedId) {
       dispatch({ type: 'DELETE_VIDEO_SUCCESS', payload: deletedId });
     }
   }, [deletedId]);
 
-  // Efecto para cargar los videos al cargar el componente o cuando se actualiza el contexto
   useEffect(() => {
     fetchData();
   }, [fetchData]);
 
-  // Proporcionar el estado y las funciones a través del contexto
   return (
     <DataContext.Provider
       value={{
