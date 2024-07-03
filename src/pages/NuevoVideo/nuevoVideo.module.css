@@ -1,4 +1,6 @@
-.container {
+/* Estilos para el formulario NuevoVideo */
+
+.nuevo-video {
   position: relative;
   background-color: #191919;
   width: 100%;
@@ -10,29 +12,36 @@
   box-sizing: border-box;
 }
 
-.title {
+.nuevo-video__header {
   text-align: center;
+}
+
+.nuevo-video__title {
   font-size: 2.4rem;
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
 }
 
-.subtitle {
-  text-align: center;
+.nuevo-video__subtitle {
   margin-bottom: 2rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
-.form {
+.nuevo-video__form {
   max-width: 60%;
   margin: 0 auto;
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box;
   margin-bottom: 2rem;
 }
 
-.formTitle {
+.nuevo-video__fieldset {
+  border: none;
+  padding: 0;
+}
+
+.nuevo-video__legend {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   border-top: 0.0001rem solid #262626;
@@ -40,26 +49,25 @@
   padding: 0.8rem;
 }
 
-.formGroup {
+.nuevo-video__form-group {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-.inputGroup {
+.nuevo-video__input-group {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.inputGroup label {
+.nuevo-video__label {
+  color: #f5f5f5;
   margin-bottom: 0.5rem;
 }
 
-.inputGroup input,
-.inputGroup select,
-.inputGroup textarea {
+.nuevo-video__input {
   padding: 1rem;
   background-color: #262626;
   border: 1px solid #444;
@@ -69,83 +77,87 @@
   box-sizing: border-box;
 }
 
-.inputGroup input::placeholder,
-.inputGroup textarea::placeholder {
-  color: #777;
+.nuevo-video__input::placeholder {
+  color: #a5a5a5; /* Color del placeholder cuando no está enfocado */
 }
 
-.inputGroup textarea {
-  width: 50%;
+.nuevo-video__input:focus::placeholder {
+  color: transparent; /* Ocultar placeholder cuando el input está enfocado */
 }
 
-.buttonGroup {
+.input--error,
+.nuevo-video__input.input--error::placeholder {
+  border-color: #e53935; /* Color de borde rojo para campos vacíos */
+  color: #e53935; /* Color de placeholder rojo cuando el campo está vacío */
+}
+
+.input--error-message {
+  color: #e53935; /* Color rojo para mensajes de error */
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.nuevo-video__button-group {
   display: flex;
   justify-content: flex-start;
   margin-top: 1rem;
   gap: 2rem;
 }
 
-.saveButton,
-.clearButton {
+.nuevo-video__save-button,
+.nuevo-video__clear-button {
   padding: 0.75rem 1.5rem;
-  border: none;
+  border: 2px solid #ffffff;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
-}
-
-.saveButton {
   background-color: #191919;
   color: #fff;
-  border: 2px solid #ffffff;
 }
 
-.clearButton {
-  background-color: #191919;
-  color: #fff;
-  border: 2px solid #ffffff;
+.nuevo-video__save-button:hover,
+.nuevo-video__clear-button:hover {
+  border-color: #2271d1; /* Cambio de color en el hover */
 }
 
-.saveButton:hover {
-  border: 2px solid #2271d1;
-}
-
-.clearButton:hover {
-  border: 2px solid #2271d1;
+.button--disabled {
+  opacity: 0.5; /* Opacidad reducida cuando está deshabilitado */
+  cursor: not-allowed; /* Cursor no disponible cuando está deshabilitado */
+  border-color: #2271d1; /* Cambio de color en el hover */
 }
 
 @media (max-width: 1200px) {
-  .form {
+  .nuevo-video__form {
     max-width: 80%;
   }
 }
 
 @media (max-width: 1024px) {
-  .form {
+  .nuevo-video__form {
     max-width: 90%;
   }
 }
 
 @media (max-width: 768px) {
-  .form {
+  .nuevo-video__form {
     max-width: 100%;
   }
 }
 
 @media (max-width: 680px) {
-  .formGroup {
+  .nuevo-video__form-group {
     flex-direction: column;
   }
 
-  .inputGroup textarea {
+  .nuevo-video__input {
     width: 100%;
   }
 
-  .inputGroup input,
-  .inputGroup select {
-    width: 100%;
-  }
-  .buttonGroup {
+  .nuevo-video__button-group {
     justify-content: space-between;
   }
+}
+
+.label--error {
+  color: #e53935; /* Color rojo para etiquetas en campos vacíos */
 }

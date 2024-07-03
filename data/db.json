@@ -1,0 +1,94 @@
+{
+  "videos": [
+    {
+      "id": "6",
+      "title": "Cuándo usar let, var y const?",
+      "category": "Innovación y Gestión",
+      "image": "https://i.ytimg.com/vi/PztCEdIJITY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDJWqQzWreQLTp7q4esMjlV1roLTA",
+      "video": "https://www.youtube.com/embed/PztCEdIJITY?si=7nJSLfAE6NFR7wVo",
+      "description": "Descripción del video",
+      "color": "#ffba05"
+    },
+    {
+      "id": "46c2",
+      "title": "¿Qué es JavaScript?",
+      "category": "Front End",
+      "image": "https://i.ytimg.com/vi/GJfOSoaXk4s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAfCWN4npfWUBdrGczCKogB-Qvi1g",
+      "video": "https://www.youtube.com/watch?v=GJfOSoaXk4s&ab_channel=AluraLatam",
+      "color": "#6bd1ff",
+      "description": "JavaScript: ¿qué es y cómo se hizo este lenguaje que genera muchas discusiones y debates entre la gente del área de desarrollo? Genesys y Gabriela nos hablan exactamente de esto en este Alura Tips.\n"
+    },
+    {
+      "id": "9285",
+      "title": "",
+      "category": "",
+      "image": "",
+      "video": "",
+      "color": "",
+      "description": ""
+    },
+    {
+      "id": "f457",
+      "title": "Cuándo usar let, var y const?",
+      "category": "Front End",
+      "image": "https://i.ytimg.com/vi/PztCEdIJITY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDJWqQzWreQLTp7q4esMjlV1roLTA",
+      "video": "https://www.youtube.com/watch?v=PztCEdIJITY&t=1s&ab_channel=AluraLatam",
+      "color": "#6bd1ff",
+      "description": "https://www.youtube.com/watch?v=PztCEdIJITY&t=1s&ab_channel=AluraLatam"
+    },
+    {
+      "id": "7fc4",
+      "title": "Equipo Front End",
+      "category": "Front End",
+      "image": "https://i.ytimg.com/vi/rpvrLaBQwgg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDoKpoRlVQCz_RrJKrwuA9onAd7Rw",
+      "video": "https://www.youtube.com/watch?v=rpvrLaBQwgg&ab_channel=AluraLatam",
+      "color": "#6bd1ff",
+      "description": "¿Estás empezando tus estudios de Programación? ¿Te interesa todo lo que es la creación de Páginas Web Desarrollo de Softwares? ¿O estás pensando en cambiar de carrera y entrar a la maravillosa area de tecnología?\n"
+    },
+    {
+      "id": "c445",
+      "title": "Spring Framework. ¿Qué es ?",
+      "category": "Back End",
+      "image": "https://i.ytimg.com/vi/t-iqt1b2qqk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDovSFByVwRvRdwIhaZYSJUGw2Rog",
+      "video": "https://www.youtube.com/watch?v=t-iqt1b2qqk&ab_channel=AluraLatam",
+      "color": "#00c86d",
+      "description": "¿Busca un framework  para utilizar en sus proyectos? ¿Conoce Spring Framework? Spring es el framework más usado de Java. Nos ofrece herramientas que nos permiten crear proyectos más avanzados, con mejores prácticas y en menor tiempo. También posee una gran comunidad, lo que nos brinda muchísima documentación y ayuda."
+    },
+    {
+      "id": "a624",
+      "title": "¿Qué es SQL y NoSQL?",
+      "category": "Back End",
+      "image": "https://i.ytimg.com/vi/cLLKVd5CNLc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDF192TpYhfpj_db3MARwWCgVFBpQ",
+      "video": "https://www.youtube.com/watch?v=cLLKVd5CNLc&ab_channel=AluraLatam",
+      "color": "#00c86d",
+      "description": "¿Cuáles son las diferencias entre una estructura de datos relacional (SQL) y una no relacional (NoSQL) y cuáles son las principales ventajas de cada una? Álvaro Camacho lo explica en este vídeo."
+    },
+    {
+      "id": "b328",
+      "title": "Simplificando tu código en Java: Conoce los enum",
+      "category": "Back End",
+      "image": "https://i.ytimg.com/vi/EoPvlE85XAQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDBLywQFxiv6SwpRuISBiQyIFdR-A",
+      "video": "https://www.youtube.com/watch?v=EoPvlE85XAQ&ab_channel=AluraLatam",
+      "color": "#00c86d",
+      "description": "¿Escribir muchas variables del tipo constantes en Java te parece un proceso tedioso y que genera muchas líneas de código? \nEn este Alura+ la instructora Génesys Rondón nos enseña a simplificar esta tarea usando un tipo de dato especial llamado enum."
+    },
+    {
+      "id": "98b1",
+      "title": "¿Qué son las Soft Skills?",
+      "category": "Innovación y Gestión",
+      "image": "https://i.ytimg.com/vi/vhwspfvI52k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDxc_0rcRKCUTqYZXq2YUcjczMJNg",
+      "video": "https://www.youtube.com/watch?v=vhwspfvI52k&t=190s&ab_channel=AluraLatam",
+      "color": "#ffba05",
+      "description": "¿Qué son las Softskills y por qué es tan importante desarrollarlas para posicionarse en el mercado laboral? En este video de Alura Tips, Pri Stuani nos habla de las habilidades más buscadas por las empresas en sus profesionales y cómo las Soft Skills te ayudan en el día a día."
+    },
+    {
+      "id": "2359",
+      "title": "¿Qué son las metodologias ágiles?",
+      "category": "Innovación y Gestión",
+      "image": "https://i.ytimg.com/vi/6N3OkLCfK-0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHL_X4Hc7j2GSNcclFDT33KV5USQ",
+      "video": "https://www.youtube.com/watch?v=6N3OkLCfK-0&ab_channel=AluraLatam",
+      "color": "#ffba05",
+      "description": "En este video nuestra invitada, Andyara, nos explicará que són las muy conocidas hoy en día metodologias ágiles y nos comentará un poco sobre como aplicarlas y cuáles son los beneficios de utilizarlas en su equipo o empresa."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+.card-item {
+  min-width: 24rem;
+  height: 18rem;
+  border-radius: 1.5rem;
+  border: 0.125rem solid; /* El color se establece dinámicamente */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+}
+
+.card-item__image {
+  width: 100%;
+  height: calc(100% - 3.75rem); /* Tamaño original */
+  object-fit: cover;
+  border-radius: 1.5rem 1.5rem 0 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-item__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000e6;
+  border-radius: 0 0 1.5rem 1.5rem;
+  padding: 0.5rem 0;
+  box-sizing: border-box;
+  align-items: center;
+  height: 3.75rem; /* Tamaño original */
+  border-top: 0.125rem solid; /* Aseguramos que el borde superior esté presente */
+}
+
+.card-item__buttons[data-category='front-end'] {
+  border-top-color: #6bd1ff;
+  box-shadow:
+    0 -0.1rem 0.4rem #6bd1ff80,
+    inset 0 0.1rem 0.4rem #6bd1ff80,
+    inset 0 0.1rem 0.4rem #6bd1ff80; /* Sombra interna */
+}
+
+.card-item__buttons[data-category='back-end'] {
+  border-top-color: #00c86d;
+  box-shadow:
+    0 -0.1rem 0.1rem #00c86d80,
+    inset 0 0.1rem 0.4rem #00c86d80,
+    inset 0 0.1rem 0.4rem #00c86d80; /* Sombra interna */
+}
+
+.card-item__buttons[data-category='innovacion-y-gestion'] {
+  border-top-color: #ffba05;
+  box-shadow:
+    0 -0.1rem 0.2rem #ffba0580,
+    inset 0 0.1rem 0.4rem #ffba0580,
+    inset 0 0.1rem 0.4rem #ffba0580; /* Sombra interna */
+}
+
+.card-item--front-end {
+  box-shadow: inset 0 0.1rem 0.4rem rgba(107, 209, 255, 0.5); /* Color para Front End */
+}
+
+.card-item--back-end {
+  box-shadow: inset 0 0.1rem 0.4rem rgba(0, 200, 109, 0.5); /* Color para Back End */
+}
+
+.card-item--innovacion-y-gestion {
+  box-shadow: inset 0 0.1rem 0.4rem rgba(255, 186, 5, 0.5); /* Color para Innovación y Gestión */
+}
+
+.button {
+  background-color: #000000e6;
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button--delete {
+  background-color: transparent;
+  color: #f5f5f5;
+  border: none;
+}
+
+.button--edit {
+  background-color: transparent;
+  color: #f5f5f5;
+  border: none;
+}
+
+.button img {
+  width: 1rem; /* Ajusta el tamaño del icono según sea necesario */
+  height: 1rem; /* Ajusta el tamaño del icono según sea necesario */
+}
+
+/* Media queries para hacer responsive el card-item */
+@media (max-width: 1200px) {
+  .card-item {
+    min-width: 20rem;
+    height: 16rem;
+  }
+  .card-item__image {
+    height: calc(100% - 3rem);
+  }
+  .card-item__buttons {
+    height: 3.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-item {
+    min-width: 18rem;
+    height: 14rem;
+  }
+  .card-item__image {
+    height: calc(100% - 2.75rem);
+  }
+  .card-item__buttons {
+    height: 3rem;
+  }
+}

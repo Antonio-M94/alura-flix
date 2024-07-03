@@ -1,123 +1,89 @@
+import { useEffect, useContext } from 'react';
 import styles from './cards.module.css';
-import deleteIcon from '../../assets/delete.png';
-import editIcon from '../../assets/edit.png';
+import ItemCard from './ItemCard/ItemCard';
+import DataContext from '../../context/DataContext';
 import Modal from '../Modal/Modal';
+
 const Cards = () => {
+  const { videos, fetchData, isModalOpen, currentVideo, closeModal } =
+    useContext(DataContext);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]); // Asegúrate de que fetchData esté memoizado o no cambie en cada renderizado
+
   return (
-    <div className={styles.container}>
-      <div className={styles.cards}>
-        <div className={styles.tag}>Front End</div>
-        <div className={styles.itemContainer}>
-          <div className={styles.item}>
-            <img
-              className={styles.itemImage}
-              src="https://cdn.pixabay.com/photo/2023/10/20/14/25/ai-generated-8329596_960_720.jpg"
-              alt="test1"
-            />
-            <div className={styles.itemButtons}>
-              <button className={styles.deleteButton}>
-                <img src={deleteIcon} alt="Borrar" />
-                <p>Borrar</p>
-              </button>
-              <button className={styles.editButton}>
-                <img src={editIcon} alt="" />
-                <p>Editar</p>
-              </button>
-            </div>
-          </div>
-          <div className={styles.item}>
-            <img
-              className={styles.itemImage}
-              src="https://cdn.pixabay.com/photo/2023/10/20/14/25/ai-generated-8329596_960_720.jpg"
-              alt="test1"
-            />
-            <div className={styles.itemButtons}>
-              <button className={styles.deleteButton}>
-                <img src={deleteIcon} alt="Borrar" />
-                <p>Borrar</p>
-              </button>
-              <button className={styles.editButton}>
-                <img src={editIcon} alt="" />
-                <p>Editar</p>
-              </button>
-            </div>
-          </div>
-          <div className={styles.item}>
-            <img
-              className={styles.itemImage}
-              src="https://cdn.pixabay.com/photo/2023/10/20/14/25/ai-generated-8329596_960_720.jpg"
-              alt="test1"
-            />
-            <div className={styles.itemButtons}>
-              <button className={styles.deleteButton}>
-                <img src={deleteIcon} alt="Borrar" />
-                <p>Borrar</p>
-              </button>
-              <button className={styles.editButton}>
-                <img src={editIcon} alt="" />
-                <p>Editar</p>
-              </button>
-            </div>
-          </div>
+    <div className={styles['cards-container']}>
+      <div className={styles['cards-section']}>
+        <div className={`${styles['cards-tag']}`} data-category="Front End">
+          Front End
+        </div>
+        <div className={styles['cards-item-container']}>
+          {videos
+            .filter((video) => video.category === 'Front End')
+            .map((video) => (
+              <ItemCard
+                key={video.id}
+                color={video.color}
+                category={video.category}
+                image={video.image}
+                video={video.video}
+                id={video.id}
+                title={video.title}
+                description={video.description}
+              />
+            ))}
         </div>
       </div>
-      <div className={styles.cards}>
-        <div className={styles.tag}>Front End</div>
-        <div className={styles.itemContainer}>
-          <div className={styles.item}>
-            <img
-              className={styles.itemImage}
-              src="https://cdn.pixabay.com/photo/2023/10/20/14/25/ai-generated-8329596_960_720.jpg"
-              alt="test1"
-            />
-            <div className={styles.itemButtons}>
-              <button className={styles.deleteButton}>
-                <img src={deleteIcon} alt="Borrar" />
-                <p>Borrar</p>
-              </button>
-              <button className={styles.editButton}>
-                <img src={editIcon} alt="" />
-                <p>Editar</p>
-              </button>
-            </div>
-          </div>
-          <div className={styles.item}>
-            <img
-              className={styles.itemImage}
-              src="https://cdn.pixabay.com/photo/2023/10/20/14/25/ai-generated-8329596_960_720.jpg"
-              alt="test1"
-            />
-            <div className={styles.itemButtons}>
-              <button className={styles.deleteButton}>
-                <img src={deleteIcon} alt="Borrar" />
-                <p>Borrar</p>
-              </button>
-              <button className={styles.editButton}>
-                <img src={editIcon} alt="" />
-                <p>Editar</p>
-              </button>
-            </div>
-          </div>
-          <div className={styles.item}>
-            <img
-              className={styles.itemImage}
-              src="https://cdn.pixabay.com/photo/2023/10/20/14/25/ai-generated-8329596_960_720.jpg"
-              alt="test1"
-            />
-            <div className={styles.itemButtons}>
-              <button className={styles.deleteButton}>
-                <img src={deleteIcon} alt="Borrar" />
-                <p>Borrar</p>
-              </button>
-              <button className={styles.editButton}>
-                <img src={editIcon} alt="" />
-                <p>Editar</p>
-              </button>
-            </div>
-          </div>
+
+      <div className={styles['cards-section']}>
+        <div className={`${styles['cards-tag']}`} data-category="Back End">
+          Back End
+        </div>
+        <div className={styles['cards-item-container']}>
+          {videos
+            .filter((video) => video.category === 'Back End')
+            .map((video) => (
+              <ItemCard
+                key={video.id}
+                color={video.color}
+                category={video.category}
+                image={video.image}
+                video={video.video}
+                id={video.id}
+                title={video.title}
+                description={video.description}
+              />
+            ))}
         </div>
       </div>
-      <Modal />
+
+      <div className={styles['cards-section']}>
+        <div
+          className={`${styles['cards-tag']}`}
+          data-category="Innovación y Gestión"
+        >
+          Innovación y Gestión
+        </div>
+        <div className={styles['cards-item-container']}>
+          {videos
+            .filter((video) => video.category === 'Innovación y Gestión')
+            .map((video) => (
+              <ItemCard
+                key={video.id}
+                color={video.color}
+                category={video.category}
+                image={video.image}
+                video={video.video}
+                id={video.id}
+                title={video.title}
+                description={video.description}
+              />
+            ))}
+        </div>
+      </div>
+
+      {isModalOpen && <Modal video={currentVideo} onClose={closeModal} />}
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import styles from './banner.module.css';
-import banner from '../../assets/banner.png';
-import player from '../../assets/player.png';
+import bannerImage from '../../assets/banner.png';
+import playerImage from '../../assets/player.png';
 
 const Banner = () => {
   return (
     <>
-      <img src={banner} alt="Banner" className={styles.bannerImage} />
+      <img src={bannerImage} alt="Banner" className={styles.bannerImage} />
       <section className={styles.container}>
         <div className={styles.card}>
           <div className={styles.tag}>Front End</div>
@@ -16,7 +16,7 @@ const Banner = () => {
             aplicar todos los conocimientos adquiridos en la formación React.
           </p>
         </div>
-        <img src={player} alt="Player" className={styles.playerImage} />
+        <img src={playerImage} alt="Player" className={styles.playerImage} />
       </section>
     </>
   );

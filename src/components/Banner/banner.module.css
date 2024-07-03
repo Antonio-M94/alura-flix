@@ -1,3 +1,13 @@
+.bannerImage {
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  height: 40rem;
+  position: absolute;
+  filter: opacity(0.9);
+  max-height: 50rem;
+}
+
 .container {
   box-sizing: border-box;
   width: 90%;
@@ -5,20 +15,10 @@
   justify-content: space-evenly;
   padding: 1.8rem 0rem;
   align-items: center;
-  height: 52rem;
+  height: 40rem;
   gap: 1rem;
-  max-height: 832px;
+  max-height: 50;
   margin: 0 auto;
-}
-
-.bannerImage {
-  width: 100%;
-  object-fit: cover;
-  z-index: -1;
-  height: 52rem;
-  position: absolute;
-  filter: opacity(0.9);
-  max-height: 832px;
 }
 
 .card {
@@ -41,6 +41,7 @@
   border-radius: 20px;
   white-space: nowrap;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .title {
@@ -54,7 +55,7 @@
 .description {
   font-size: 1.4rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-top: 0;
 }
 
@@ -64,13 +65,13 @@
   border-radius: 30px;
   box-sizing: border-box;
   object-fit: contain;
-  box-sizing: border-box;
 }
 
 @media (max-width: 1200px) {
   .container {
     padding: 1.8rem 1rem;
     height: 30rem;
+    width: 94%;
   }
 
   .bannerImage {
@@ -88,10 +89,14 @@
 
   .description {
     font-size: 1.2rem;
+    line-height: 1.5;
   }
 }
 
 @media (max-width: 1024px) {
+  .container {
+    width: 98%;
+  }
   .tag {
     font-size: 3vw;
     padding: 0.5vw 2.5vw;
@@ -103,10 +108,14 @@
 
   .description {
     font-size: 1rem;
+    line-height: 1.5;
   }
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
   .tag {
     font-size: 4vw;
     padding: 0.5vw 2.5vw;
@@ -120,7 +129,7 @@
 
   .description {
     font-size: 0.9rem;
-    line-height: 1.1;
+    line-height: 1.5;
   }
 }
 
