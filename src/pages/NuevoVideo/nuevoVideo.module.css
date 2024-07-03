@@ -47,6 +47,8 @@
   border-top: 0.0001rem solid #262626;
   border-bottom: 0.0001rem solid #262626;
   padding: 0.8rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .nuevo-video__form-group {
@@ -113,6 +115,7 @@
   cursor: pointer;
   background-color: #191919;
   color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nuevo-video__save-button:hover,
